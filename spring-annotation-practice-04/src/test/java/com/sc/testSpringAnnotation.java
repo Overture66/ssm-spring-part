@@ -11,6 +11,5 @@ public class testSpringAnnotation {
         ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("spring-01.xml");
         StudentController bean = classPathXmlApplicationContext.getBean(StudentController.class);
         bean.findAll();
-        System.out.println("bean = " + bean);
     }
 }
